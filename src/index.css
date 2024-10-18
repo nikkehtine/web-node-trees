@@ -3,33 +3,56 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --background: 240 15% 10%;
-    --foreground: 229 35% 75%;
-    --side: 235 18% 13%;
-    --side-foreground: 229 35% 75%;
-    --card: 230 24% 19%;
-    --card-foreground: 229 35% 75%;
-    --popover: 235 18% 13%;
-    --popover-foreground: 229 35% 75%;
-    --primary: 230 24% 19%;
-    --primary-foreground: 229 73% 86%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 11% 7%;
-    --input: 240 11% 7%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    /* UI */
+    --background: var(--tokyo-8);
+    --foreground: var(--tokyo-2);
+    --map: var(--tokyo-9);
+    --map-foreground: var(--tokyo-2);
+    --card: var(--tokyo-6);
+    --card-foreground: var(--tokyo-2);
+    --popover: var(--tokyo-8);
+    --popover-foreground: var(--tokyo-2);
+    --primary: var(--tokyo-blue);
+    --primary-foreground: var(--tokyo-6);
+    --secondary: var(--tokyo-9);
+    --secondary-foreground: var(--tokyo-3);
+    --muted: var(--tokyo-7);
+    --muted-foreground: var(--tokyo-4);
+    --accent: var(--tokyo-7);
+    --accent-foreground: var(--tokyo-2);
+    --destructive: var(--tokyo-red);
+    --destructive-foreground: var(--tokyo-6);
+    --border: var(--tokyo-10);
+    --input: var(--tokyo-10);
+    --ring: var(--tokyo-blue);
+    --chart-1: var(--tokyo-red);
+    --chart-2: var(--tokyo-orange);
+    --chart-3: var(--tokyo-green);
+    --chart-4: var(--tokyo-sky);
+    --chart-5: var(--tokyo-indigo);
     --radius: 0.5rem;
+    /* Tokyo Night */
+    --tokyo-red: 349 89% 72%;
+    --tokyo-orange: 22 100% 70%;
+    --tokyo-yellow: 36 66% 64%;
+    --tokyo-green: 89 51% 61%;
+    --tokyo-aqua: 171 58% 65%;
+    --tokyo-cyan: 189 73% 52%;
+    --tokyo-sky: 202 100% 75%;
+    --tokyo-blue: 221 89% 72%;
+    --tokyo-purple: 261 85% 79%;
+    --tokyo-bright-yellow: 32 12% 79%;
+    --tokyo-bright-aqua: 179 85% 84%;
+    --tokyo-1: 229 73% 86%;
+    --tokyo-2: 229 35% 75%;
+    --tokyo-3: 227 35% 71%;
+    --tokyo-4: 229 23% 44%;
+    --tokyo-5: 229 23% 33%;
+    --tokyo-6: 230 24% 19%;
+    --tokyo-7: 233 21% 15%;
+    --tokyo-8: 235 19% 13%;
+    --tokyo-9: 240 15% 10%;
+    --tokyo-10: 240 11% 7%;
   }
 }
 @layer base {
@@ -37,9 +60,9 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background font-mono text-foreground;
   }
   #root {
-    @apply flex min-h-dvh bg-background font-mono text-foreground;
+    @apply flex min-h-dvh flex-col md:flex-row;
   }
 }

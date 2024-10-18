@@ -1,3 +1,5 @@
-const Content = () => <div className="grow border-r">content</div>;
-
-export default Content;
+export default function Content() {
+  return (
+    <div className="bg-map text-map-foreground grow border-r">content</div>
+  );
+}
