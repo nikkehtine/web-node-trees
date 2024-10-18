@@ -6,7 +6,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export const TechChooser = () => {
+const TechChooser = () => {
   return (
     <Select>
       <SelectTrigger>
@@ -20,3 +20,5 @@ export const TechChooser = () => {
     </Select>
   );
 };
+
+export default TechChooser;

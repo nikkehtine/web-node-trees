@@ -1,5 +1,5 @@
-export const SidebarNode = () => {
-  return (
-    <div className="bg-card my-1 rounded-md border px-2 py-1">I am a node</div>
-  );
+const SidebarNode = () => {
+  return <div className="rounded-md border bg-card px-2 py-1">I am a node</div>;
 };
+
+export default SidebarNode;

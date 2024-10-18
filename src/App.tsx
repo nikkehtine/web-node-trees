@@ -1,10 +1,11 @@
-import { Content, Sidebar } from "@/components";
+import Content from "@/components/Content";
+import Sidebar from "@/components/Sidebar";
 
 export default function App() {
   return (
-    <div className="text-foreground bg-background flex min-h-dvh font-mono">
+    <>
       <Content />
       <Sidebar />
-    </div>
+    </>
   );
 }
