@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "gen-sample-data": "tsx scripts/generate-sample-data.ts"
+    "gen-sample-data": "tsx scripts/generateSampleData.ts"
   },
   "dependencies": {
     "@fontsource/fira-mono": "^5.1.0",

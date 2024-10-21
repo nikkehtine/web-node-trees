@@ -1,14 +1,14 @@
 export type ContentNode = {
-  name: string;
-  id: string;
+  name?: string;
   nodeType: NodeType;
-  order: number;
+  id: number;
   references: Reference[];
+  children?: Reference[];
 };
 
 export type NodeType = "parent" | "child" | "popup";
 
-export type Reference = string;
+export type Reference = number;
 
 export type TextProps = {
   children: any;
