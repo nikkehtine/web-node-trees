@@ -1,6 +1,10 @@
 const Content = () => {
   return (
-    <div className="bg-map text-map-foreground grow border-r">content</div>
+    <div className="flex grow border-r bg-map text-map-foreground">
+      <p className="h-full w-full content-center items-center text-center text-xl text-tokyo-yellow">
+        Choose a renderer
+      </p>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 
 const Sidebar = () => {
   return (
-    <div className="hidden select-none gap-2 bg-side px-4 py-2 md:flex md:min-w-[226px] md:max-w-[360px] md:flex-col">
+    <div className="bg-side hidden select-none gap-2 px-4 py-2 md:flex md:w-1/4 md:min-w-[226px] md:max-w-[360px] md:flex-col">
       <TechChooser />
       <Separator className="my-1" />
       <SidebarNode />

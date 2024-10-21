@@ -2,6 +2,7 @@ export type ContentNode = {
   name: string;
   id: string;
   nodeType: NodeType;
+  order: number;
   references: Reference[];
 };
 
