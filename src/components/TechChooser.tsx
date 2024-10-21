@@ -5,17 +5,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useContentMapStore } from "@/lib/store";
+import { Renderers } from "@/lib/types";
 
 export default function TechChooser() {
+  const changeRenderer = useContentMapStore((state) => state.setRenderer);
+
   return (
-    <Select>
+    <Select onValueChange={changeRenderer}>
       <SelectTrigger>
         <SelectValue placeholder="Choose a renderer" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="1">1</SelectItem>
-        <SelectItem value="2">2</SelectItem>
-        <SelectItem value="3">3</SelectItem>
+        {Object.keys(Renderers).map((item, i) => (
+          <SelectItem key={i} value={item}>
+            {item}
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   );

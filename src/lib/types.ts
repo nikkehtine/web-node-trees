@@ -1,3 +1,8 @@
+export enum Renderers {
+  "Cytoscape",
+  "Konva",
+}
+
 export type ContentNode = {
   name?: string;
   nodeType: NodeType;
@@ -6,11 +11,13 @@ export type ContentNode = {
   children?: Reference[];
 };
 
+export type NodesList = ContentNode[];
+
 export type NodeType = "parent" | "child" | "popup";
 
 export type Reference = number;
 
-export type TextProps = {
+export type SidebarNodeTextProps = {
   children: any;
   className?: string;
 };

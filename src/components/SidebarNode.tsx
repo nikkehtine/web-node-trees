@@ -1,4 +1,4 @@
-import { TextProps } from "@/lib/types";
+import { SidebarNodeTextProps } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const SidebarNode = () => {
@@ -9,7 +9,10 @@ const SidebarNode = () => {
   );
 };
 
-const Title = ({ children, className: passedClasses }: TextProps) => (
+const Title = ({
+  children,
+  className: passedClasses,
+}: SidebarNodeTextProps) => (
   <p className={cn("text-sm", passedClasses)}>{children}</p>
 );
 
