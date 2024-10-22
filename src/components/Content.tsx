@@ -5,7 +5,7 @@ const Content = () => {
   const renderer = useContentMapStore((state) => state.renderer);
 
   return (
-    <div className="flex grow border-r bg-map text-map-foreground">
+    <div className="flex grow bg-map text-map-foreground md:border-r">
       {(() => {
         switch (renderer) {
           case "Cytoscape":
@@ -14,7 +14,7 @@ const Content = () => {
             return <KonvaMap />;
           default:
             return (
-              <p className="h-full w-full content-center items-center text-center text-xl text-tokyo-yellow">
+              <p className="h-full w-full select-none content-center items-center text-center text-xl text-tokyo-yellow">
                 Choose a renderer
               </p>
             );

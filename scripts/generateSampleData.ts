@@ -29,7 +29,7 @@ for (let i = 0; i < contentLength; i++) {
     nodeType: nodeType,
     id: i,
     references: [],
-    children: nodeType === "parent" ? [] : undefined,
+    childrenNodes: nodeType === "parent" ? [] : undefined,
   });
 }
 
@@ -47,7 +47,7 @@ for (let i = 0; i < contentLength; i++) {
         nodesArray[i - getRandomMinMaxNumber(1, 3)].references.push(i);
         break;
       case "child":
-        nodesArray[lastParent].children?.push(i);
+        nodesArray[lastParent].childrenNodes?.push(i);
         break;
     }
   }
@@ -62,7 +62,7 @@ for (let i = 0; i < contentLength; i++) {
     if (Math.random() >= probability) {
       continue;
     }
-    if (nodesArray[i].children?.includes(r)) {
+    if (nodesArray[i].childrenNodes?.includes(r)) {
       continue;
     }
     nodesArray[i].references.push(r);

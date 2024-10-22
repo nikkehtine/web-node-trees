@@ -7,60 +7,59 @@ export const sampleNodes: Array<ContentNode> = [
     "id": 0,
     "references": [
       1,
-      2,
-      4,
-      8
+      5
     ],
-    "children": []
+    "childrenNodes": []
   },
   {
     "nodeType": "parent",
     "id": 1,
     "references": [
-      3
-    ],
-    "children": []
-  },
-  {
-    "nodeType": "popup",
-    "id": 2,
-    "references": [
       0,
       3,
       4,
-      7,
-      8
+      5,
+      6
+    ],
+    "childrenNodes": [
+      2
     ]
   },
   {
-    "nodeType": "popup",
-    "id": 3,
+    "nodeType": "child",
+    "id": 2,
     "references": [
-      0,
+      3,
+      4,
       5,
-      7,
-      9
+      6,
+      7
     ]
   },
   {
     "nodeType": "parent",
+    "id": 3,
+    "references": [
+      4,
+      5,
+      7
+    ],
+    "childrenNodes": []
+  },
+  {
+    "nodeType": "popup",
     "id": 4,
     "references": [
-      2,
-      3
-    ],
-    "children": []
+      5
+    ]
   },
   {
     "nodeType": "parent",
     "id": 5,
     "references": [
-      0,
-      2,
-      3,
-      8
+      2
     ],
-    "children": [
+    "childrenNodes": [
       6
     ]
   },
@@ -68,39 +67,22 @@ export const sampleNodes: Array<ContentNode> = [
     "nodeType": "child",
     "id": 6,
     "references": [
-      2,
-      7,
-      8,
-      9
-    ]
-  },
-  {
-    "nodeType": "popup",
-    "id": 7,
-    "references": [
       1,
-      4,
-      6,
-      9
+      2,
+      3,
+      7
     ]
   },
   {
     "nodeType": "parent",
-    "id": 8,
-    "references": [
-      4,
-      5,
-      6,
-      9
-    ],
-    "children": []
-  },
-  {
-    "nodeType": "popup",
-    "id": 9,
+    "id": 7,
     "references": [
       0,
-      5
-    ]
+      1,
+      4,
+      5,
+      6
+    ],
+    "childrenNodes": []
   }
 ];

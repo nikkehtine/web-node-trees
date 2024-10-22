@@ -3,7 +3,7 @@ export type ContentNode = {
   nodeType: NodeType;
   id: number;
   references: Reference[];
-  children?: Reference[];
+  childrenNodes?: Reference[];
 };
 
 export type NodesList = ContentNode[];
@@ -16,3 +16,7 @@ export type SidebarNodeTextProps = {
   children: any;
   className?: string;
 };
+
+export type SidebarNodeKeyValueProps = {
+  title: string;
+} & SidebarNodeTextProps;
