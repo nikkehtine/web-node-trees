@@ -42,7 +42,7 @@ const Title = ({
   <div className="my-1 flex place-items-center gap-2 text-base font-bold">
     <div
       className={cn(
-        "flex h-8 w-8 items-center justify-center rounded-md bg-tokyo-7 px-1",
+        "flex h-8 w-8 items-center justify-center rounded-md bg-tokyo-7",
         colorVariants[nodeType],
       )}
     >
