@@ -1,8 +1,3 @@
-export enum Renderers {
-  "Cytoscape",
-  "Konva",
-}
-
 export type ContentNode = {
   name?: string;
   nodeType: NodeType;
